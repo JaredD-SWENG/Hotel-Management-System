@@ -133,9 +133,9 @@ namespace FinalProject
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void skipButton_Click(object sender, EventArgs e)
         {
-            
+
             isFormClosing = false;
             var ocf = new OrderConfirmationForm(drif, user);
             ocf.FormClosing += f2FormClosing;

@@ -103,8 +103,8 @@ namespace FinalProject
             this.Close();
 
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        
+        private void hotelsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if  (listBox1.Items.Count > 0) listBox1.Items.Clear();
             Hotel temp = (Hotel)comboBox1.SelectedItem;

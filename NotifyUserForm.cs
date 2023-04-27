@@ -22,10 +22,10 @@ namespace FinalProject
             label1.Text = user.getName() + ", A room you want is now available!";
             button1.Text = "Notified. Thanks!";
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void notifiedButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        
     }
 }
