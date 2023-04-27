@@ -21,7 +21,7 @@ namespace FinalProject
         {
             InitializeComponent();
             this.user = user;
-            
+            this.Text = user.getName() + " View Reservation Form";
             foreach (DecoratorReservation reservation in user.getReservations())
             {
                 comboBox1.Items.Add(reservation);

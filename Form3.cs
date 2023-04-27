@@ -35,6 +35,7 @@ namespace FinalProject
             roomAC = (RoomAC)selectedRoom;
             isFormClosing = false;
             this.user = user;
+            this.Text = user.getName() + " Reservation Form";
         }
 
         private void nextButton_Click(object sender, EventArgs e)

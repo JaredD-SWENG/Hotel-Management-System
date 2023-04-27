@@ -22,6 +22,7 @@ namespace FinalProject
         {
             InitializeComponent();
             this.user = user;
+            this.Text = user.getName() + " Book Later Form";
             this.room = room;
         }
 

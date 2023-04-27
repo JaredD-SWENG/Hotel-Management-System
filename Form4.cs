@@ -28,6 +28,7 @@ namespace FinalProject
             List<string> bonusFeatures = new List<string>();
             includedFeatures.AddRange(rf.getBuilder().provideFeatures());
             InitializeComponent();
+            this.Text = user.getName() + " Bonus Features Form";
             //Continental Breakfast, Exclusive Parking, Gym Pass, Pool Pass, SPA, WiFi
             bonusFeatures.Add(string.Format("{0,-21}{1,13}","Continental Breakfast_","FREE"));
             bonusFeatures.Add(string.Format("{0,-21}{1,13}","Exclusive Parking_","$8.00"));

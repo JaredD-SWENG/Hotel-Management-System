@@ -35,6 +35,7 @@ namespace FinalProject
                 comboBox1.Items.Add(htl);
             }
             this.user = user;
+            this.Text = user.getName() + " Hotel Selection Form";
         }
 
         private void button1_Click(object sender, EventArgs e)
