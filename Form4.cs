@@ -29,14 +29,14 @@ namespace FinalProject
             includedFeatures.AddRange(rf.getBuilder().provideFeatures());
             InitializeComponent();
             //Continental Breakfast, Exclusive Parking, Gym Pass, Pool Pass, SPA, WiFi
-            bonusFeatures.Add("Continental Breakfast");
-            bonusFeatures.Add("Exclusive Parking");
-            bonusFeatures.Add("Room Service");
-            bonusFeatures.Add("Gym Pass");
-            bonusFeatures.Add("Pool Pass");
-            bonusFeatures.Add("Spa");
-            bonusFeatures.Add("WiFi");
-            bonusFeatures.Add("Premium TV");
+            bonusFeatures.Add(string.Format("{0,-21}{1,13}","Continental Breakfast_","FREE"));
+            bonusFeatures.Add(string.Format("{0,-21}{1,13}","Exclusive Parking_","$8.00"));
+            bonusFeatures.Add(string.Format("{0,-21}{1,13}", "Room Service_", "$5.00"));
+            bonusFeatures.Add(string.Format("{0,-21}{1,13}", "Gym Pass_", "$6.00"));
+            bonusFeatures.Add(string.Format("{0,-21}{1,13}", "Pool Pass_", "$4.00"));
+            bonusFeatures.Add(string.Format("{0,-21}{1,13}", "Spa_", "$15.00"));
+            bonusFeatures.Add(string.Format("{0,-21}{1,13}", "WiFi_", "$1.00"));
+            bonusFeatures.Add(string.Format("{0,-21}{1,13}", "Premium TV_", "$2.00"));
             isFormClosing = false;
             bool flag;
 
@@ -45,9 +45,9 @@ namespace FinalProject
                 flag = true;
                 foreach(string k in includedFeatures)
                 {
-                    if  (k.Contains(s)) flag = false;
+                    if  (k.Contains((s.Split('_')).ElementAt(0))) flag = false;
                 }
-                if  (flag == true) checkedListBox1.Items.Add(s);
+                if  (flag == true) checkedListBox1.Items.Add(s.Replace('_', ' '));
             }
 
             //Unpack what is stored in decorator, populate what is missing in list to be selected and added.
