@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// RoomService
+    /// THis is the service that provides room service
+    /// </summary>
     class RoomService : ServiceAC
     {
         public RoomService(bool included):base(included) { }

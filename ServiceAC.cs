@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// ServiceAC
+    /// This is the abstract class for all services
+    /// </summary>
     abstract class ServiceAC: ServiceIF
     {
         private bool included;

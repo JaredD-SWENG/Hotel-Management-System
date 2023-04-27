@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// ReservationForm
+    /// This is the form where users will choose which type of reservation they want
+    /// </summary>
     public partial class ReservationForm : Form
     {
         private User user;

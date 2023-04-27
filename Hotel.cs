@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// Hotel
+    /// This class is represents the hotel, which is made of floors
+    /// </summary>
     public class Hotel: HotelCommonElements, InternalIF
     {
         private List<InternalIF> floors;

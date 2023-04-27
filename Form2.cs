@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// HotelSelectionForm
+    /// This is the form where users will select a room from a hotel to book now or later
+    /// </summary>
     public partial class HotelSelectionForm : Form
     {
 
@@ -56,7 +60,7 @@ namespace FinalProject
             if (!((RoomAC)selectedRoom).isReserved())
             {
 
-                ((RoomAC)selectedRoom).changeReservedStatus();
+                hmgr.reserveRoom(selectedRoom);
                 int prevCount = (user.getReservations()).Count;
                 isFormClosing = false;
                 var rf = new ReservationForm(user, selectedRoom);
@@ -72,7 +76,7 @@ namespace FinalProject
 
                 if(prevCount == (user.getReservations()).Count)
                 {
-                    ((RoomAC)selectedRoom).changeReservedStatus();
+                    hmgr.reserveRoom(selectedRoom);
                 }
 
                 this.Close();
@@ -96,7 +100,7 @@ namespace FinalProject
                 Application.DoEvents();
                 Thread.Sleep(10);
             }
-            this.Show();
+            this.Close();
 
         }
 
@@ -104,7 +108,7 @@ namespace FinalProject
         {
             if  (listBox1.Items.Count > 0) listBox1.Items.Clear();
             Hotel temp = (Hotel)comboBox1.SelectedItem;
-            List<HotelIF3> hifs = temp.getRooms();
+            List<HotelIF3> hifs = hmgr.getRooms(temp);
             foreach(HotelIF3 hf in hifs)
             {
                 listBox1.Items.Add(hf);

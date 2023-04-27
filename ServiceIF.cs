@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// ServiceIF
+    /// This is the interface for all services
+    /// </summary>
     public interface ServiceIF
     {
         double calculateCost();

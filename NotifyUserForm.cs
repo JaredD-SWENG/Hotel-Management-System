@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// NotifyUserForm
+    /// This form will pop up to notify users if the room the are looking to reserve later has opened up
+    /// </summary>
     public partial class NotifyUserForm : Form
     {
         public NotifyUserForm(User user)

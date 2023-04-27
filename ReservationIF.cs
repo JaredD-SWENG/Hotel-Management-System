@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// ReservationIF
+    /// This is the interface for all reservations
+    /// </summary>
     public interface ReservationIF
     {
         double calculateCost();

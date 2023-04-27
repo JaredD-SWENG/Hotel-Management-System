@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// StandardReservation
+    /// This is the standard level reservation
+    /// </summary>
     class StandardReservation : ReservationAC
     {
         

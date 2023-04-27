@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// BookLaterForm
+    /// This form is where users can book a room for later
+    /// </summary>
     public partial class BookLaterForm : Form
     {
         RoomAC room;

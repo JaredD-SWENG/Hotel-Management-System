@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// ViewReservationForm
+    /// This form gives the user the option to view their reservations
+    /// </summary>
     public partial class ViewReservationForm : Form
     {
         User user;

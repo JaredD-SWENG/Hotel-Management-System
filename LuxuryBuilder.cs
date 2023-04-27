@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// LuxuryBuilder
+    /// This is the builder for the luxury level reservation
+    /// </summary>
     class LuxuryBuilder : BuilderAC
     {
         public override DecoratorReservation build()

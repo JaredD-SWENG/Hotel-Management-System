@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// ObserverIF
+    /// This is the interface for observer objects
+    /// </summary>
     public interface ObserverIF
     {
         void notify();

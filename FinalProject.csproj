@@ -91,6 +91,7 @@
     <Compile Include="OneBedRoom.cs" />
     <Compile Include="PoolPass.cs" />
     <Compile Include="PremiumTV.cs" />
+    <Compile Include="ReadWriteLock.cs" />
     <Compile Include="ReservationAC.cs" />
     <Compile Include="ReservationIF.cs" />
     <Compile Include="RoomService.cs" />

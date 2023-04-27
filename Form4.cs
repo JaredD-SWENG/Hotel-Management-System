@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// BonusFeaturesForm
+    /// This form allows users to select additional services if they want
+    /// </summary>
     public partial class BonusFeaturesForm : Form
     {
         DecoratorReservation drif;
@@ -25,14 +29,14 @@ namespace FinalProject
             includedFeatures.AddRange(rf.getBuilder().provideFeatures());
             InitializeComponent();
             //Continental Breakfast, Exclusive Parking, Gym Pass, Pool Pass, SPA, WiFi
-            bonusFeatures.Add("Continental");
-            bonusFeatures.Add("Exclusive");
-            bonusFeatures.Add("Room");
-            bonusFeatures.Add("Gym");
-            bonusFeatures.Add("Pool");
+            bonusFeatures.Add("Continental Breakfast");
+            bonusFeatures.Add("Exclusive Parking");
+            bonusFeatures.Add("Room Service");
+            bonusFeatures.Add("Gym Pass");
+            bonusFeatures.Add("Pool Pass");
             bonusFeatures.Add("Spa");
             bonusFeatures.Add("WiFi");
-            bonusFeatures.Add("Premium");
+            bonusFeatures.Add("Premium TV");
             isFormClosing = false;
             bool flag;
 
@@ -127,6 +131,22 @@ namespace FinalProject
 
             return servicesTemp;
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            isFormClosing = false;
+            var ocf = new OrderConfirmationForm(drif, user);
+            ocf.FormClosing += f2FormClosing;
+            this.Hide();
+            ocf.Show();
+            while (!isFormClosing)
+            {
+                Application.DoEvents();
+                Thread.Sleep(10);
+            }
+            this.Close();
         }
     }
 }

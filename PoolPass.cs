@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// PoolPass
+    /// This is a service that gives access to the hotel's pool
+    /// </summary>
     class PoolPass : ServiceAC
     {
         public PoolPass(bool included):base(included) { }

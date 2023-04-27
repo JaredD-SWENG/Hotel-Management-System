@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// BuilderIF
+    /// This is the interface for all builders, they create reservations
+    /// </summary>
     public interface BuilderIF
     {
         DecoratorReservation build();

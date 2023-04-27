@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// PremiumTV
+    /// This is a service that provides access to premium tv
+    /// </summary>
     class PremiumTV : ServiceAC
     {
         public PremiumTV(bool included):base(included) { }

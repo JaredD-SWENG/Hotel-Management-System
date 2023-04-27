@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// OneBedRoom
+    /// This is a specific type of room that contains one bed
+    /// </summary>
     class OneBedRoom:RoomAC
     {
         public OneBedRoom(string hotelName, string address, string phoneNumber) :base(hotelName, address, phoneNumber)

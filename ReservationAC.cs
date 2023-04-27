@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// ReservationAC
+    /// This is the abstract class for all reservations
+    /// </summary>
     public abstract class ReservationAC : ReservationIF
     {
         private DateTime startDate;

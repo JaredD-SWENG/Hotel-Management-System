@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// DecoratorReservation
+    /// This is a subclass of ReservationAC that allows for wrapping with services
+    /// </summary>
     public class DecoratorReservation : ReservationAC
     {
         private ServiceIF servif;

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// DeluxeBuilder
+    /// This is builder creates deluxe level reservations
+    /// </summary>
     class DeluxeBuilder : BuilderAC
     {
         public DeluxeBuilder() { }

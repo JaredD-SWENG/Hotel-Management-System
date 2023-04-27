@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// OrderConfirmationForm
+    /// This form allows users to confirm or cancel their reservation
+    /// </summary>
     public partial class OrderConfirmationForm : Form
     {
         DecoratorReservation drif;
@@ -73,6 +77,11 @@ namespace FinalProject
         {
             
             user.addReservation(drif);
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

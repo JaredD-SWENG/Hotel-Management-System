@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// MainMenuForm
+    /// This is the main menu where users can create or view reservations
+    /// </summary>
     public partial class MainMenuForm : Form
     {
         User user;

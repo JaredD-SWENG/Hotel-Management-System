@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// ObserverMultiCaster
+    /// This class handles all the observers for the observable
+    /// </summary>
     class ObserverMultiCaster
     {
         List<ObserverIF> observers = new List<ObserverIF>();

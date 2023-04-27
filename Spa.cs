@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// Spa
+    /// This is a service that allows access to the hotel's spa
+    /// </summary>
     class Spa : ServiceAC
     {
         public Spa(bool included):base(included) { }

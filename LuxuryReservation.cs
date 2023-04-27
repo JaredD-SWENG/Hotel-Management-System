@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// LuxuryReservation
+    /// This is the luxury level reservation
+    /// </summary>
     class LuxuryReservation : ReservationAC
     {
         public LuxuryReservation() : base(165.00) { }

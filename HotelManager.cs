@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// HotelManager
+    /// This class manages the different hotels, it is the shared resource
+    /// </summary>
     public class HotelManager
     {
         private static HotelManager hotelManager = new HotelManager();
         private List<Hotel> hotels;
+        private ReadWriteLock lockManager = new ReadWriteLock();
         private HotelManager()
         {
             string name = "DaysInn";
@@ -76,5 +81,22 @@ namespace FinalProject
         {
             return hotels;
         }
+
+        public List<HotelIF3> getRooms(Hotel h)
+        {
+            lockManager.readLock();
+            List<HotelIF3> roomlist = h.getRooms();
+            lockManager.unlock();
+            return roomlist;
+        }
+
+        public void reserveRoom(HotelIF3 hif)
+        {
+            //call write lock
+            lockManager.writeLock();
+            ((RoomAC)hif).changeReservedStatus();
+            lockManager.unlock();
+        }
+         
     }
 }

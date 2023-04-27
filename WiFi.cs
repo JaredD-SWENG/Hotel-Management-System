@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// WiFi
+    /// This is service that provides access to WiFi
+    /// </summary>
     class WiFi : ServiceAC
     {
         public WiFi(bool included):base(included) { }

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// ExclusiveParking
+    /// This is a service of exclusive parking
+    /// </summary>
     class ExclusiveParking : ServiceAC
     {
         public ExclusiveParking(bool included) : base(included) { }

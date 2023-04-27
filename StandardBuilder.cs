@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// StandardBuilder
+    /// This is the builder that creates a standard reservation
+    /// </summary>
     class StandardBuilder : BuilderAC
     {
         public StandardBuilder() { }

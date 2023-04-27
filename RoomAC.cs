@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// RoomAC
+    /// This is the abstract class for all rooms, it is also an obserable object
+    /// </summary>
     abstract public class RoomAC : HotelCommonElements, HotelIF3, ObservableIF
     {
         private bool reserved;

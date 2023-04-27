@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// BuilderAC
+    /// This is the abstract class for all the builders, it interacts with the Reservation Form
+    /// </summary>
     abstract class BuilderAC : BuilderIF
     {
         protected ReservationForm rf;

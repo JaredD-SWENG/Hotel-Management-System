@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// User
+    /// This class represents the user who can make reservations and be notified if the room their wanted to book later opens up
+    /// </summary>
     public class User : ObserverIF
     {
         private string name;

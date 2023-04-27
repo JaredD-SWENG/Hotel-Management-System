@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// HotelCommonElements
+    /// This class has the common elements for the hotel components (hotel, floor, and room)
+    /// </summary>
     public class HotelCommonElements
     {
         private string hotelName;
