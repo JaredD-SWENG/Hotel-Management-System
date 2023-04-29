@@ -35,6 +35,7 @@ namespace FinalProject
             roomAC = (RoomAC)selectedRoom;
             isFormClosing = false;
             this.user = user;
+            this.Text = user.getName() + " Reservation Form";
         }
 
         private void nextButton_Click(object sender, EventArgs e)
@@ -96,14 +97,14 @@ namespace FinalProject
             dateTimePicker2.MinDate = dateTimePicker1.Value.AddDays(1);
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void reservationsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             builder = builder.provideBuilder((comboBox1.SelectedItem).ToString());
 
             //Dynamically fill "features" list with appropriate data. listBox1
             List<string> strs = builder.provideFeatures();
             listBox1.Items.Clear();
-            foreach(string str in strs)
+            foreach (string str in strs)
             {
                 listBox1.Items.Add(str);
             }

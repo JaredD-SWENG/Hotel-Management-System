@@ -25,6 +25,7 @@ namespace FinalProject
             this.drif = drif;
             InitializeComponent();
             this.user = user;
+            this.Text = user.getName() + " Order Confirmation Form";
 
             //Set a temp to Decorator
 

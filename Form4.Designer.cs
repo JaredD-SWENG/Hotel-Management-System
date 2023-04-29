@@ -50,7 +50,7 @@ namespace FinalProject
             // checkedListBox1
             // 
             this.checkedListBox1.CheckOnClick = true;
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(25, 73);
             this.checkedListBox1.Name = "checkedListBox1";
@@ -87,7 +87,7 @@ namespace FinalProject
             this.button1.TabIndex = 5;
             this.button1.Text = "Skip";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.skipButton_Click);
             // 
             // BonusFeaturesForm
             // 
